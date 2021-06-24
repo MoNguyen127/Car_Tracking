@@ -18,14 +18,20 @@ namespace WindowsFormsApp1
           }
 
 
-      
+          private void DrawBorder(object sender, PaintEventArgs e)
+          {
+               Rectangle rect = new Rectangle(this.cb_CamType.Location.X - 1, this.cb_CamType.Location.Y - 1, this.cb_CamType.Width + 1, this.cb_CamType.Height + 1);
 
-         
+               Pen pen = new Pen(Color.LightSteelBlue, 2);
+               Graphics g = e.Graphics;
 
-          
+               g.DrawRectangle(pen, rect);
+               this.cb_CamType.Refresh();
+          }
 
-         
-
-
+          private void side_AddCam_Click(object sender, EventArgs e)
+          {
+               this.Paint += DrawBorder;
+          }
      }
 }
