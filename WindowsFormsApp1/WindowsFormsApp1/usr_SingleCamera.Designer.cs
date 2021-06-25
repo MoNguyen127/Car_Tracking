@@ -31,16 +31,16 @@ namespace WindowsFormsApp1
           {
                this.panel1 = new System.Windows.Forms.Panel();
                this.pictureBox1 = new System.Windows.Forms.PictureBox();
-               this.button1 = new System.Windows.Forms.Button();
-               this.button2 = new System.Windows.Forms.Button();
+               this.txt_Status = new System.Windows.Forms.Button();
+               this.txt_Location = new System.Windows.Forms.Button();
                this.panel1.SuspendLayout();
                ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
                this.SuspendLayout();
                // 
                // panel1
                // 
-               this.panel1.Controls.Add(this.button2);
-               this.panel1.Controls.Add(this.button1);
+               this.panel1.Controls.Add(this.txt_Location);
+               this.panel1.Controls.Add(this.txt_Status);
                this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
                this.panel1.Location = new System.Drawing.Point(0, 172);
                this.panel1.Name = "panel1";
@@ -56,25 +56,25 @@ namespace WindowsFormsApp1
                this.pictureBox1.TabIndex = 1;
                this.pictureBox1.TabStop = false;
                // 
-               // button1
+               // txt_Status
                // 
-               this.button1.Dock = System.Windows.Forms.DockStyle.Left;
-               this.button1.Location = new System.Drawing.Point(0, 0);
-               this.button1.Name = "button1";
-               this.button1.Size = new System.Drawing.Size(57, 25);
-               this.button1.TabIndex = 0;
-               this.button1.Text = "Bật";
-               this.button1.UseVisualStyleBackColor = true;
+               this.txt_Status.Dock = System.Windows.Forms.DockStyle.Left;
+               this.txt_Status.Location = new System.Drawing.Point(0, 0);
+               this.txt_Status.Name = "txt_Status";
+               this.txt_Status.Size = new System.Drawing.Size(57, 25);
+               this.txt_Status.TabIndex = 0;
+               this.txt_Status.Text = "Bật";
+               this.txt_Status.UseVisualStyleBackColor = true;
                // 
-               // button2
+               // txt_Location
                // 
-               this.button2.Dock = System.Windows.Forms.DockStyle.Right;
-               this.button2.Location = new System.Drawing.Point(250, 0);
-               this.button2.Name = "button2";
-               this.button2.Size = new System.Drawing.Size(57, 25);
-               this.button2.TabIndex = 1;
-               this.button2.Text = "Vị Trí:";
-               this.button2.UseVisualStyleBackColor = true;
+               this.txt_Location.Dock = System.Windows.Forms.DockStyle.Right;
+               this.txt_Location.Location = new System.Drawing.Point(250, 0);
+               this.txt_Location.Name = "txt_Location";
+               this.txt_Location.Size = new System.Drawing.Size(57, 25);
+               this.txt_Location.TabIndex = 1;
+               this.txt_Location.Text = "Vị Trí:";
+               this.txt_Location.UseVisualStyleBackColor = true;
                // 
                // usr_SingleCamera
                // 
@@ -95,7 +95,7 @@ namespace WindowsFormsApp1
 
           private System.Windows.Forms.Panel panel1;
           private System.Windows.Forms.PictureBox pictureBox1;
-          private System.Windows.Forms.Button button2;
-          private System.Windows.Forms.Button button1;
+          private System.Windows.Forms.Button txt_Location;
+          private System.Windows.Forms.Button txt_Status;
      }
 }

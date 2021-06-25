@@ -98,6 +98,12 @@
     <Compile Include="usr_AddCamera.Designer.cs">
       <DependentUpon>usr_AddCamera.cs</DependentUpon>
     </Compile>
+    <Compile Include="usr_CameraView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usr_CameraView.Designer.cs">
+      <DependentUpon>usr_CameraView.cs</DependentUpon>
+    </Compile>
     <Compile Include="usr_SingleCamera.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -119,6 +125,9 @@
     </Compile>
     <EmbeddedResource Include="usr_AddCamera.resx">
       <DependentUpon>usr_AddCamera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usr_CameraView.resx">
+      <DependentUpon>usr_CameraView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usr_SingleCamera.resx">
       <DependentUpon>usr_SingleCamera.cs</DependentUpon>
