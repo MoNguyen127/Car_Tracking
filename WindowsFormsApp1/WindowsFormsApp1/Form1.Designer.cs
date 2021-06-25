@@ -55,12 +55,8 @@ namespace WindowsFormsApp1
                this.panel2 = new System.Windows.Forms.Panel();
                this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
                this.panel3 = new System.Windows.Forms.Panel();
-               this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
                this.txt_Address = new System.Windows.Forms.TextBox();
-               this.btnDel = new DevComponents.DotNetBar.ButtonX();
                this.panel5 = new System.Windows.Forms.Panel();
-               this.btnAdd = new DevComponents.DotNetBar.ButtonX();
-               this.btnCheckCon = new DevComponents.DotNetBar.ButtonX();
                this.panel13 = new System.Windows.Forms.Panel();
                this.panel10 = new System.Windows.Forms.Panel();
                this.txt_RTSPUrl = new System.Windows.Forms.TextBox();
@@ -94,8 +90,6 @@ namespace WindowsFormsApp1
                this.Camera_Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
                this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
                this.panel20 = new System.Windows.Forms.Panel();
-               this.buttonX9 = new DevComponents.DotNetBar.ButtonX();
-               this.buttonX8 = new DevComponents.DotNetBar.ButtonX();
                this.textBox3 = new System.Windows.Forms.TextBox();
                this.panel22 = new System.Windows.Forms.Panel();
                this.separator19 = new DevComponents.DotNetBar.Separator();
@@ -112,9 +106,6 @@ namespace WindowsFormsApp1
                this.panel17 = new System.Windows.Forms.Panel();
                this.gMapControl2 = new GMap.NET.WindowsForms.GMapControl();
                this.panel16 = new System.Windows.Forms.Panel();
-               this.buttonX5 = new DevComponents.DotNetBar.ButtonX();
-               this.buttonX6 = new DevComponents.DotNetBar.ButtonX();
-               this.buttonX7 = new DevComponents.DotNetBar.ButtonX();
                this.lb_httpport = new System.Windows.Forms.Label();
                this.lb_rtspport = new System.Windows.Forms.Label();
                this.lb_location = new System.Windows.Forms.Label();
@@ -153,6 +144,15 @@ namespace WindowsFormsApp1
                this.styleManager3 = new DevComponents.DotNetBar.StyleManager(this.components);
                this.styleManager4 = new DevComponents.DotNetBar.StyleManager(this.components);
                this.columnHeader1 = new DevComponents.AdvTree.ColumnHeader();
+               this.buttonX9 = new DevComponents.DotNetBar.ButtonX();
+               this.buttonX8 = new DevComponents.DotNetBar.ButtonX();
+               this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+               this.btnDel = new DevComponents.DotNetBar.ButtonX();
+               this.btnAdd = new DevComponents.DotNetBar.ButtonX();
+               this.btnCheckCon = new DevComponents.DotNetBar.ButtonX();
+               this.buttonX5 = new DevComponents.DotNetBar.ButtonX();
+               this.buttonX6 = new DevComponents.DotNetBar.ButtonX();
+               this.buttonX7 = new DevComponents.DotNetBar.ButtonX();
                this.sideNavPanel2.SuspendLayout();
                this.sideNav2.SuspendLayout();
                this.sideNavPanel7.SuspendLayout();
@@ -229,6 +229,7 @@ namespace WindowsFormsApp1
                // 
                // side_Home
                // 
+               this.side_Home.Checked = true;
                this.side_Home.Name = "side_Home";
                this.side_Home.Panel = this.sideNavPanel1;
                this.side_Home.Symbol = "";
@@ -241,7 +242,6 @@ namespace WindowsFormsApp1
                this.sideNavPanel1.Name = "sideNavPanel1";
                this.sideNavPanel1.Size = new System.Drawing.Size(1501, 665);
                this.sideNavPanel1.TabIndex = 2;
-               this.sideNavPanel1.Visible = false;
                // 
                // separator7
                // 
@@ -263,9 +263,9 @@ namespace WindowsFormsApp1
                // sideNavPanel4
                // 
                this.sideNavPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-               this.sideNavPanel4.Location = new System.Drawing.Point(109, 36);
+               this.sideNavPanel4.Location = new System.Drawing.Point(1, 1);
                this.sideNavPanel4.Name = "sideNavPanel4";
-               this.sideNavPanel4.Size = new System.Drawing.Size(1501, 665);
+               this.sideNavPanel4.Size = new System.Drawing.Size(1613, 700);
                this.sideNavPanel4.TabIndex = 14;
                this.sideNavPanel4.Visible = false;
                // 
@@ -281,7 +281,6 @@ namespace WindowsFormsApp1
                // 
                // side_Cam
                // 
-               this.side_Cam.Checked = true;
                this.side_Cam.Name = "side_Cam";
                this.side_Cam.Panel = this.sideNavPanel2;
                this.side_Cam.Symbol = "";
@@ -296,6 +295,7 @@ namespace WindowsFormsApp1
                this.sideNavPanel2.Name = "sideNavPanel2";
                this.sideNavPanel2.Size = new System.Drawing.Size(1501, 665);
                this.sideNavPanel2.TabIndex = 6;
+               this.sideNavPanel2.Visible = false;
                // 
                // sideNav2
                // 
@@ -327,9 +327,9 @@ namespace WindowsFormsApp1
                // 
                this.sideNavPanel7.Controls.Add(this.sideNav3);
                this.sideNavPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-               this.sideNavPanel7.Location = new System.Drawing.Point(158, 36);
+               this.sideNavPanel7.Location = new System.Drawing.Point(1, 1);
                this.sideNavPanel7.Name = "sideNavPanel7";
-               this.sideNavPanel7.Size = new System.Drawing.Size(1338, 628);
+               this.sideNavPanel7.Size = new System.Drawing.Size(1499, 663);
                this.sideNavPanel7.TabIndex = 34;
                this.sideNavPanel7.Visible = false;
                // 
@@ -352,16 +352,16 @@ namespace WindowsFormsApp1
                this.sideNav3.Location = new System.Drawing.Point(0, 0);
                this.sideNav3.Name = "sideNav3";
                this.sideNav3.Padding = new System.Windows.Forms.Padding(1);
-               this.sideNav3.Size = new System.Drawing.Size(1338, 628);
+               this.sideNav3.Size = new System.Drawing.Size(1499, 663);
                this.sideNav3.TabIndex = 5;
                this.sideNav3.Text = "Quản Lý Camera";
                // 
                // sideNavPanel9
                // 
                this.sideNavPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-               this.sideNavPanel9.Location = new System.Drawing.Point(153, 36);
+               this.sideNavPanel9.Location = new System.Drawing.Point(1, 1);
                this.sideNavPanel9.Name = "sideNavPanel9";
-               this.sideNavPanel9.Size = new System.Drawing.Size(1180, 591);
+               this.sideNavPanel9.Size = new System.Drawing.Size(1497, 661);
                this.sideNavPanel9.TabIndex = 34;
                this.sideNavPanel9.Visible = false;
                // 
@@ -369,9 +369,9 @@ namespace WindowsFormsApp1
                // 
                this.sideNavPanel12.Controls.Add(this.panel1);
                this.sideNavPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
-               this.sideNavPanel12.Location = new System.Drawing.Point(153, 36);
+               this.sideNavPanel12.Location = new System.Drawing.Point(1, 1);
                this.sideNavPanel12.Name = "sideNavPanel12";
-               this.sideNavPanel12.Size = new System.Drawing.Size(1180, 591);
+               this.sideNavPanel12.Size = new System.Drawing.Size(1497, 661);
                this.sideNavPanel12.TabIndex = 6;
                this.sideNavPanel12.Visible = false;
                // 
@@ -383,7 +383,7 @@ namespace WindowsFormsApp1
                this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
                this.panel1.Location = new System.Drawing.Point(0, 0);
                this.panel1.Name = "panel1";
-               this.panel1.Size = new System.Drawing.Size(1180, 591);
+               this.panel1.Size = new System.Drawing.Size(1497, 661);
                this.panel1.TabIndex = 0;
                // 
                // panel2
@@ -392,7 +392,7 @@ namespace WindowsFormsApp1
                this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
                this.panel2.Location = new System.Drawing.Point(552, 0);
                this.panel2.Name = "panel2";
-               this.panel2.Size = new System.Drawing.Size(628, 591);
+               this.panel2.Size = new System.Drawing.Size(945, 661);
                this.panel2.TabIndex = 50;
                // 
                // gMapControl1
@@ -418,7 +418,7 @@ namespace WindowsFormsApp1
                this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
                this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
                this.gMapControl1.ShowTileGridLines = false;
-               this.gMapControl1.Size = new System.Drawing.Size(628, 591);
+               this.gMapControl1.Size = new System.Drawing.Size(945, 661);
                this.gMapControl1.TabIndex = 2;
                this.gMapControl1.Zoom = 0D;
                // 
@@ -449,21 +449,8 @@ namespace WindowsFormsApp1
                this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
                this.panel3.Location = new System.Drawing.Point(0, 0);
                this.panel3.Name = "panel3";
-               this.panel3.Size = new System.Drawing.Size(552, 591);
+               this.panel3.Size = new System.Drawing.Size(552, 661);
                this.panel3.TabIndex = 49;
-               // 
-               // buttonX1
-               // 
-               this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-               this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-               this.buttonX1.Image = ((System.Drawing.Image)(resources.GetObject("buttonX1.Image")));
-               this.buttonX1.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-               this.buttonX1.Location = new System.Drawing.Point(105, 474);
-               this.buttonX1.Name = "buttonX1";
-               this.buttonX1.Size = new System.Drawing.Size(121, 58);
-               this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-               this.buttonX1.TabIndex = 51;
-               this.buttonX1.Text = "Đến";
                // 
                // txt_Address
                // 
@@ -479,19 +466,6 @@ namespace WindowsFormsApp1
                this.txt_Address.Enter += new System.EventHandler(this.txt_Address_Enter);
                this.txt_Address.Leave += new System.EventHandler(this.txt_Address_Leave);
                // 
-               // btnDel
-               // 
-               this.btnDel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-               this.btnDel.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-               this.btnDel.Image = ((System.Drawing.Image)(resources.GetObject("btnDel.Image")));
-               this.btnDel.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-               this.btnDel.Location = new System.Drawing.Point(318, 474);
-               this.btnDel.Name = "btnDel";
-               this.btnDel.Size = new System.Drawing.Size(121, 58);
-               this.btnDel.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-               this.btnDel.TabIndex = 50;
-               this.btnDel.Text = "Xóa";
-               // 
                // panel5
                // 
                this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -499,32 +473,6 @@ namespace WindowsFormsApp1
                this.panel5.Name = "panel5";
                this.panel5.Size = new System.Drawing.Size(481, 1);
                this.panel5.TabIndex = 43;
-               // 
-               // btnAdd
-               // 
-               this.btnAdd.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-               this.btnAdd.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-               this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
-               this.btnAdd.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-               this.btnAdd.Location = new System.Drawing.Point(318, 390);
-               this.btnAdd.Name = "btnAdd";
-               this.btnAdd.Size = new System.Drawing.Size(121, 58);
-               this.btnAdd.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-               this.btnAdd.TabIndex = 49;
-               this.btnAdd.Text = "Thêm";
-               // 
-               // btnCheckCon
-               // 
-               this.btnCheckCon.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-               this.btnCheckCon.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-               this.btnCheckCon.Image = ((System.Drawing.Image)(resources.GetObject("btnCheckCon.Image")));
-               this.btnCheckCon.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-               this.btnCheckCon.Location = new System.Drawing.Point(105, 390);
-               this.btnCheckCon.Name = "btnCheckCon";
-               this.btnCheckCon.Size = new System.Drawing.Size(121, 58);
-               this.btnCheckCon.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-               this.btnCheckCon.TabIndex = 48;
-               this.btnCheckCon.Text = "Kiểm Tra Kết Nối";
                // 
                // panel13
                // 
@@ -708,7 +656,7 @@ namespace WindowsFormsApp1
                this.sideNavPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
                this.sideNavPanel11.Location = new System.Drawing.Point(153, 36);
                this.sideNavPanel11.Name = "sideNavPanel11";
-               this.sideNavPanel11.Size = new System.Drawing.Size(1180, 591);
+               this.sideNavPanel11.Size = new System.Drawing.Size(1341, 626);
                this.sideNavPanel11.TabIndex = 2;
                // 
                // panel19
@@ -719,7 +667,7 @@ namespace WindowsFormsApp1
                this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
                this.panel19.Location = new System.Drawing.Point(0, 0);
                this.panel19.Name = "panel19";
-               this.panel19.Size = new System.Drawing.Size(1180, 591);
+               this.panel19.Size = new System.Drawing.Size(1341, 626);
                this.panel19.TabIndex = 1;
                // 
                // panel21
@@ -728,7 +676,7 @@ namespace WindowsFormsApp1
                this.panel21.Dock = System.Windows.Forms.DockStyle.Fill;
                this.panel21.Location = new System.Drawing.Point(0, 86);
                this.panel21.Name = "panel21";
-               this.panel21.Size = new System.Drawing.Size(1180, 505);
+               this.panel21.Size = new System.Drawing.Size(1341, 540);
                this.panel21.TabIndex = 1;
                // 
                // dataGridView2
@@ -761,7 +709,7 @@ namespace WindowsFormsApp1
                this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
                this.dataGridView2.Location = new System.Drawing.Point(0, 0);
                this.dataGridView2.Name = "dataGridView2";
-               this.dataGridView2.Size = new System.Drawing.Size(1180, 505);
+               this.dataGridView2.Size = new System.Drawing.Size(1341, 540);
                this.dataGridView2.TabIndex = 0;
                // 
                // Seq
@@ -857,34 +805,8 @@ namespace WindowsFormsApp1
                this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
                this.panel20.Location = new System.Drawing.Point(0, 0);
                this.panel20.Name = "panel20";
-               this.panel20.Size = new System.Drawing.Size(1180, 86);
+               this.panel20.Size = new System.Drawing.Size(1341, 86);
                this.panel20.TabIndex = 0;
-               // 
-               // buttonX9
-               // 
-               this.buttonX9.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-               this.buttonX9.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-               this.buttonX9.Image = ((System.Drawing.Image)(resources.GetObject("buttonX9.Image")));
-               this.buttonX9.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-               this.buttonX9.Location = new System.Drawing.Point(815, 11);
-               this.buttonX9.Name = "buttonX9";
-               this.buttonX9.Size = new System.Drawing.Size(121, 58);
-               this.buttonX9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-               this.buttonX9.TabIndex = 54;
-               this.buttonX9.Text = "Sửa";
-               // 
-               // buttonX8
-               // 
-               this.buttonX8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-               this.buttonX8.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-               this.buttonX8.Image = ((System.Drawing.Image)(resources.GetObject("buttonX8.Image")));
-               this.buttonX8.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-               this.buttonX8.Location = new System.Drawing.Point(1007, 11);
-               this.buttonX8.Name = "buttonX8";
-               this.buttonX8.Size = new System.Drawing.Size(121, 58);
-               this.buttonX8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-               this.buttonX8.TabIndex = 51;
-               this.buttonX8.Text = "Xóa";
                // 
                // textBox3
                // 
@@ -1001,9 +923,9 @@ namespace WindowsFormsApp1
                this.sideNavPanel6.Controls.Add(this.panel17);
                this.sideNavPanel6.Controls.Add(this.panel16);
                this.sideNavPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-               this.sideNavPanel6.Location = new System.Drawing.Point(158, 36);
+               this.sideNavPanel6.Location = new System.Drawing.Point(1, 1);
                this.sideNavPanel6.Name = "sideNavPanel6";
-               this.sideNavPanel6.Size = new System.Drawing.Size(1338, 628);
+               this.sideNavPanel6.Size = new System.Drawing.Size(1499, 663);
                this.sideNavPanel6.TabIndex = 6;
                this.sideNavPanel6.Visible = false;
                // 
@@ -1014,7 +936,7 @@ namespace WindowsFormsApp1
                this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
                this.panel17.Location = new System.Drawing.Point(292, 0);
                this.panel17.Name = "panel17";
-               this.panel17.Size = new System.Drawing.Size(1046, 628);
+               this.panel17.Size = new System.Drawing.Size(1207, 663);
                this.panel17.TabIndex = 1;
                // 
                // gMapControl2
@@ -1040,7 +962,7 @@ namespace WindowsFormsApp1
                this.gMapControl2.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
                this.gMapControl2.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
                this.gMapControl2.ShowTileGridLines = false;
-               this.gMapControl2.Size = new System.Drawing.Size(1046, 628);
+               this.gMapControl2.Size = new System.Drawing.Size(1207, 663);
                this.gMapControl2.TabIndex = 0;
                this.gMapControl2.Zoom = 0D;
                // 
@@ -1066,47 +988,8 @@ namespace WindowsFormsApp1
                this.panel16.Dock = System.Windows.Forms.DockStyle.Left;
                this.panel16.Location = new System.Drawing.Point(0, 0);
                this.panel16.Name = "panel16";
-               this.panel16.Size = new System.Drawing.Size(292, 628);
+               this.panel16.Size = new System.Drawing.Size(292, 663);
                this.panel16.TabIndex = 0;
-               // 
-               // buttonX5
-               // 
-               this.buttonX5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-               this.buttonX5.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-               this.buttonX5.Image = ((System.Drawing.Image)(resources.GetObject("buttonX5.Image")));
-               this.buttonX5.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-               this.buttonX5.Location = new System.Drawing.Point(165, 338);
-               this.buttonX5.Name = "buttonX5";
-               this.buttonX5.Size = new System.Drawing.Size(121, 58);
-               this.buttonX5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-               this.buttonX5.TabIndex = 53;
-               this.buttonX5.Text = "Ngắt Kết Nối";
-               // 
-               // buttonX6
-               // 
-               this.buttonX6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-               this.buttonX6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-               this.buttonX6.Image = ((System.Drawing.Image)(resources.GetObject("buttonX6.Image")));
-               this.buttonX6.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-               this.buttonX6.Location = new System.Drawing.Point(90, 410);
-               this.buttonX6.Name = "buttonX6";
-               this.buttonX6.Size = new System.Drawing.Size(121, 58);
-               this.buttonX6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-               this.buttonX6.TabIndex = 52;
-               this.buttonX6.Text = "Sửa";
-               // 
-               // buttonX7
-               // 
-               this.buttonX7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-               this.buttonX7.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-               this.buttonX7.Image = ((System.Drawing.Image)(resources.GetObject("buttonX7.Image")));
-               this.buttonX7.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-               this.buttonX7.Location = new System.Drawing.Point(10, 338);
-               this.buttonX7.Name = "buttonX7";
-               this.buttonX7.Size = new System.Drawing.Size(121, 58);
-               this.buttonX7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-               this.buttonX7.TabIndex = 51;
-               this.buttonX7.Text = "Xem Trực Tuyến";
                // 
                // lb_httpport
                // 
@@ -1383,9 +1266,9 @@ namespace WindowsFormsApp1
                // sideNavPanel3
                // 
                this.sideNavPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-               this.sideNavPanel3.Location = new System.Drawing.Point(109, 36);
+               this.sideNavPanel3.Location = new System.Drawing.Point(1, 1);
                this.sideNavPanel3.Name = "sideNavPanel3";
-               this.sideNavPanel3.Size = new System.Drawing.Size(1501, 665);
+               this.sideNavPanel3.Size = new System.Drawing.Size(1613, 700);
                this.sideNavPanel3.TabIndex = 10;
                this.sideNavPanel3.Visible = false;
                // 
@@ -1401,9 +1284,9 @@ namespace WindowsFormsApp1
                // 
                // sideNav1
                // 
+               this.sideNav1.Controls.Add(this.sideNavPanel1);
                this.sideNav1.Controls.Add(this.sideNavPanel2);
                this.sideNav1.Controls.Add(this.sideNavPanel4);
-               this.sideNav1.Controls.Add(this.sideNavPanel1);
                this.sideNav1.Controls.Add(this.sideNavPanel3);
                this.sideNav1.Dock = System.Windows.Forms.DockStyle.Fill;
                this.sideNav1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
@@ -1455,6 +1338,123 @@ namespace WindowsFormsApp1
                this.columnHeader1.Name = "columnHeader1";
                this.columnHeader1.Text = "2";
                this.columnHeader1.Width.Absolute = 150;
+               // 
+               // buttonX9
+               // 
+               this.buttonX9.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+               this.buttonX9.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+               this.buttonX9.Image = ((System.Drawing.Image)(resources.GetObject("buttonX9.Image")));
+               this.buttonX9.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+               this.buttonX9.Location = new System.Drawing.Point(815, 11);
+               this.buttonX9.Name = "buttonX9";
+               this.buttonX9.Size = new System.Drawing.Size(121, 58);
+               this.buttonX9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+               this.buttonX9.TabIndex = 54;
+               this.buttonX9.Text = "Sửa";
+               // 
+               // buttonX8
+               // 
+               this.buttonX8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+               this.buttonX8.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+               this.buttonX8.Image = ((System.Drawing.Image)(resources.GetObject("buttonX8.Image")));
+               this.buttonX8.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+               this.buttonX8.Location = new System.Drawing.Point(1007, 11);
+               this.buttonX8.Name = "buttonX8";
+               this.buttonX8.Size = new System.Drawing.Size(121, 58);
+               this.buttonX8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+               this.buttonX8.TabIndex = 51;
+               this.buttonX8.Text = "Xóa";
+               // 
+               // buttonX1
+               // 
+               this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+               this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+               this.buttonX1.Image = ((System.Drawing.Image)(resources.GetObject("buttonX1.Image")));
+               this.buttonX1.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+               this.buttonX1.Location = new System.Drawing.Point(105, 474);
+               this.buttonX1.Name = "buttonX1";
+               this.buttonX1.Size = new System.Drawing.Size(121, 58);
+               this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+               this.buttonX1.TabIndex = 51;
+               this.buttonX1.Text = "Đến";
+               // 
+               // btnDel
+               // 
+               this.btnDel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+               this.btnDel.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+               this.btnDel.Image = ((System.Drawing.Image)(resources.GetObject("btnDel.Image")));
+               this.btnDel.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+               this.btnDel.Location = new System.Drawing.Point(318, 474);
+               this.btnDel.Name = "btnDel";
+               this.btnDel.Size = new System.Drawing.Size(121, 58);
+               this.btnDel.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+               this.btnDel.TabIndex = 50;
+               this.btnDel.Text = "Xóa";
+               // 
+               // btnAdd
+               // 
+               this.btnAdd.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+               this.btnAdd.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+               this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
+               this.btnAdd.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+               this.btnAdd.Location = new System.Drawing.Point(318, 390);
+               this.btnAdd.Name = "btnAdd";
+               this.btnAdd.Size = new System.Drawing.Size(121, 58);
+               this.btnAdd.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+               this.btnAdd.TabIndex = 49;
+               this.btnAdd.Text = "Thêm";
+               // 
+               // btnCheckCon
+               // 
+               this.btnCheckCon.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+               this.btnCheckCon.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+               this.btnCheckCon.Image = ((System.Drawing.Image)(resources.GetObject("btnCheckCon.Image")));
+               this.btnCheckCon.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+               this.btnCheckCon.Location = new System.Drawing.Point(105, 390);
+               this.btnCheckCon.Name = "btnCheckCon";
+               this.btnCheckCon.Size = new System.Drawing.Size(121, 58);
+               this.btnCheckCon.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+               this.btnCheckCon.TabIndex = 48;
+               this.btnCheckCon.Text = "Kiểm Tra Kết Nối";
+               // 
+               // buttonX5
+               // 
+               this.buttonX5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+               this.buttonX5.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+               this.buttonX5.Image = ((System.Drawing.Image)(resources.GetObject("buttonX5.Image")));
+               this.buttonX5.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+               this.buttonX5.Location = new System.Drawing.Point(165, 338);
+               this.buttonX5.Name = "buttonX5";
+               this.buttonX5.Size = new System.Drawing.Size(121, 58);
+               this.buttonX5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+               this.buttonX5.TabIndex = 53;
+               this.buttonX5.Text = "Ngắt Kết Nối";
+               // 
+               // buttonX6
+               // 
+               this.buttonX6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+               this.buttonX6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+               this.buttonX6.Image = ((System.Drawing.Image)(resources.GetObject("buttonX6.Image")));
+               this.buttonX6.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+               this.buttonX6.Location = new System.Drawing.Point(90, 410);
+               this.buttonX6.Name = "buttonX6";
+               this.buttonX6.Size = new System.Drawing.Size(121, 58);
+               this.buttonX6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+               this.buttonX6.TabIndex = 52;
+               this.buttonX6.Text = "Sửa";
+               // 
+               // buttonX7
+               // 
+               this.buttonX7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+               this.buttonX7.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+               this.buttonX7.Image = ((System.Drawing.Image)(resources.GetObject("buttonX7.Image")));
+               this.buttonX7.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+               this.buttonX7.Location = new System.Drawing.Point(10, 338);
+               this.buttonX7.Name = "buttonX7";
+               this.buttonX7.Size = new System.Drawing.Size(121, 58);
+               this.buttonX7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+               this.buttonX7.TabIndex = 51;
+               this.buttonX7.Text = "Xem Trực Tuyến";
                // 
                // Form1
                // 

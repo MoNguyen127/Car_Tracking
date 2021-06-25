@@ -37,6 +37,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevComponents.DotNetBar2, Version=12.8.0.6, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="Emgu.CV.UI, Version=4.1.0.3420, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <HintPath>..\packages\EMGU.CV.4.1.0.3420\lib\net35\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.World, Version=4.1.0.3420, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <HintPath>..\packages\EMGU.CV.4.1.0.3420\lib\net35\Emgu.CV.World.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -79,6 +85,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.7.430, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZedGraph.5.1.7\lib\net35-Client\ZedGraph.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FlatComboBox.cs">
@@ -90,6 +99,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="IPCameraHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="usr_AddCamera.cs">
@@ -104,11 +114,11 @@
     <Compile Include="usr_CameraView.Designer.cs">
       <DependentUpon>usr_CameraView.cs</DependentUpon>
     </Compile>
-    <Compile Include="usr_SingleCamera.cs">
+    <Compile Include="usr_SingleCamGrid.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="usr_SingleCamera.Designer.cs">
-      <DependentUpon>usr_SingleCamera.cs</DependentUpon>
+    <Compile Include="usr_SingleCamGrid.Designer.cs">
+      <DependentUpon>usr_SingleCamGrid.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -129,8 +139,8 @@
     <EmbeddedResource Include="usr_CameraView.resx">
       <DependentUpon>usr_CameraView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="usr_SingleCamera.resx">
-      <DependentUpon>usr_SingleCamera.cs</DependentUpon>
+    <EmbeddedResource Include="usr_SingleCamGrid.resx">
+      <DependentUpon>usr_SingleCamGrid.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -149,6 +159,15 @@
   <ItemGroup>
     <None Include="Resources\Warning.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="License-LGPL.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\Hiep\CameraTracker\CameraTracker_Database\CameraTracker_Database.csproj">
+      <Project>{888147fa-5f07-4db5-9454-6792fec52b04}</Project>
+      <Name>CameraTracker_Database</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
@@ -157,7 +176,9 @@
     <Error Condition="!Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.3.0\build\EntityFramework.props'))" />
     <Error Condition="!Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.3.0\build\EntityFramework.targets'))" />
     <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\EMGU.CV.4.1.0.3420\build\EMGU.CV.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EMGU.CV.4.1.0.3420\build\EMGU.CV.targets'))" />
   </Target>
   <Import Project="..\packages\EntityFramework.6.3.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" />
   <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+  <Import Project="..\packages\EMGU.CV.4.1.0.3420\build\EMGU.CV.targets" Condition="Exists('..\packages\EMGU.CV.4.1.0.3420\build\EMGU.CV.targets')" />
 </Project>
